@@ -686,7 +686,7 @@ An interesting special case arises on PostgreSQL and Oracle.
 [[named-enums]]
 .Named enumerated types
 ****
-Some databases support _named_ `ENUM` types, which must be declared using in DDL using:
+Some databases support _named_ `ENUM` types, which must be declared in DDL using:
 
 - `CREATE TYPE ... AS ENUM` on PostgreSQL, or
 - `CREATE DOMAIN ... AS ENUM` on Oracle.
