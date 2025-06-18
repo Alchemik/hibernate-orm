@@ -767,7 +767,7 @@ Also, since I guess we're now working in some sort of container environment, we'
 @Transactional
 public List<Book> findBooks(String titlePattern, int pageNumber) {
     var page = Page.page(RESULTS_PER_PAGE, pageNumber);
-    var books = queries.findBooksTitled(session, titlePattern, page); // call the repository method
+    var books = queries.findBooksTitled(titlePattern, page); // call the repository method
     return books.isEmpty() ? Response.status(404).build() : books;
 }
 ----
