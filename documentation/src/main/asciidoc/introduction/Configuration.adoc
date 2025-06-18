@@ -557,7 +557,7 @@ We don't recommend the use of global identifier quoting, and in fact these setti
 
 [TIP]
 ====
-A better alternative is to explicitly quote table and column names where necessary, by writing `@Table(name="\"View\")` or `@Column(name="\"number\"")`.
+A better alternative is to explicitly quote table and column names where necessary, by writing `@Table(name="\"View\"")` or `@Column(name="\"number\"")`.
 Since that's kinda ugly, Hibernate lets us use a backtick as the quote character instead of the double quote.
 ====
 
